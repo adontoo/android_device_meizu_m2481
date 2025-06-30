@@ -1,0 +1,45 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "charger_fw_fstab.qti",
+    src: "etc/charger_fw_fstab.qti",
+    recovery: true,
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.qcom",
+    src: "etc/fstab.qcom",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    src: "etc/init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "init.m2481.rc",
+    src: "etc/init.m2481.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "etc/init.target.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc_xml {
+    name: "compat_framework_overrides.xml",
+    src: "etc/compat_framework_overrides.xml",
+    sub_dir: "appcompat",
+    product_specific: true,
+}

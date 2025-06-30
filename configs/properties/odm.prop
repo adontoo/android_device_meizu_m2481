@@ -1,0 +1,14 @@
+# Bluetooth
+bluetooth.device.default_name=Meizu 21 Pro
+
+# Displayfeature
+sys.displayfeature_hidl=false
+
+# Marketname
+ro.product.marketname=MEIZU 21 Pro
+
+# Qti
+ro.vendor.qti.va_odm.support=1
+
+# USB
+vendor.usb.product_string=Meizu 21 Pro
