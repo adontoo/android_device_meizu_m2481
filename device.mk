@@ -5,7 +5,7 @@
 #
 
 # Call the proprietary setup.
-#$(call inherit-product, vendor/meizu/m2481/m2481-vendor.mk)
+$(call inherit-product, vendor/meizu/m2481/m2481-vendor.mk)
 
 # Enable virtual A/B.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
@@ -85,7 +85,10 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndcardparser \
-    libvolumelistener
+    libvolumelistener \
+    libvui_intf \
+    libPeripheralStateUtils \
+    libhapticgenerator
 
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8650/audio/primary-hal
 
@@ -121,6 +124,16 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
+# Biometrics
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.common-V2-ndk.vendor \
+    android.hardware.biometrics.common-V3-ndk.vendor \
+    android.hardware.biometrics.common.thread \
+    android.hardware.biometrics.common.util \
+    android.hardware.biometrics.face-V2-ndk.vendor \
+    android.hardware.biometrics.face-V3-ndk.vendor \
+    android.hardware.biometrics.fingerprint-V3-ndk.vendor
+
 # Camera
 #$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
@@ -146,7 +159,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 #PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.shennong
+    android.hardware.biometrics.fingerprint-service.m2481
 
 PRODUCT_PACKAGES += \
     android.hardware.fingerprint.prebuilt.xml

@@ -8,7 +8,7 @@ DEVICE_PATH := device/meizu/m2481
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 TARGET_PROVIDES_AUDIO_HAL ?= true
 
-# ALLOW_MISSING_DEPENDENCIES := true
+ALLOW_MISSING_DEPENDENCIES := true
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -291,4 +291,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-# -include vendor/meizu/m2481/BoardConfigVendor.mk
+-include vendor/meizu/m2481/BoardConfigVendor.mk
