@@ -66,6 +66,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.primary.pineapple \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -79,12 +82,14 @@ PRODUCT_PACKAGES += \
     libagm_mixer_plugin \
     libbatterylistener \
     libfmpal \
+    libats \
     libhfp_pal \
     libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libsndcardparser \
+    vendor.qti.hardware.AGMIPC@1.0-impl \
     libvolumelistener \
     libvui_intf \
     libPeripheralStateUtils \
@@ -100,7 +105,7 @@ PRODUCT_PACKAGES += \
     usb_audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
-    bluetooth_hearing_aid_audio_policy_configuration.xml \
+    bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     device_vendor_audio_sku_files \
     device_odm_audio_sku_files \
     usecaseKvManager.xml
@@ -239,8 +244,8 @@ PRODUCT_PACKAGES += \
     product_vm-system_mountpoint \
     vendor_bt_firmware_mountpoint \
     vendor_dsp_mountpoint \
-    vendor_firmware_mnt_mountpoint \
-    vendor_modem_firmware_mountpoint
+    vendor_firmware_mnt_mountpoint #\
+    #vendor_modem_firmware_mountpoint
 
 # Network
 PRODUCT_PACKAGES += \
@@ -288,7 +293,7 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/pineapple/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # PowerShare
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.default
 
 # QSPA
@@ -296,7 +301,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspa-service
 
 # RIL modem_firmware symlink
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     rfs_msm_mpss_readonly_modem_firmware_symlink \
     rfs_msm_mpss_readonly_mbnconfig_symlink
 
@@ -305,7 +310,7 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
     init.recovery.qcom.rc \
-    init.shennong.rc \
+    init.m2481.rc \
     init.target.rc
 
 PRODUCT_COPY_FILES += \
@@ -412,7 +417,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
     libpasn \
-    libwifi-hal
+    libwifi-hal-ctrl
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi.direct.prebuilt.xml \
@@ -428,6 +433,5 @@ PRODUCT_PACKAGES += \
 
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
-    firmware_wlanmdsp.otaupdate_symlink \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
