@@ -2109,7 +2109,7 @@ vendor/lib64/libappclassifier.so
 #vendor/lib64/libar-acdb.so
 #vendor/lib64/libar-gpr.so
 #vendor/lib64/libar-gsl.so
-vendor/lib64/libar-pal.so
+#vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_calibverify_TriCamera.so
 vendor/lib64/libarcsoft_chi_utils.so
 vendor/lib64/libarcsoft_dual_sat.so
@@ -2133,7 +2133,7 @@ vendor/lib64/libarcsoft_turbo_fusion_raw_super_night.so
 vendor/lib64/libarcsoft_turbo_hdr_grf.so
 vendor/lib64/libarcsoft_turbo_hdr_raw.so
 vendor/lib64/libarcsoft_turbo_hdr_raw_portrait.so
-vendor/lib64/libarmemlog.so
+vendor/lib64/libarmemlog.so;DISABLE_CHECKELF
 #vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 #vendor/lib64/libaudiochargerlistener.so
@@ -2661,7 +2661,7 @@ vendor/lib64/libvpphvx.so
 vendor/lib64/libvppimmotion.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
-vendor/lib64/libvui_intf.so
+vendor/lib64/libvui_intf.so;DISABLE_CHECKELF
 vendor/lib64/libwfdaac_vendor.so
 vendor/lib64/libwfdcodecv4l2_proprietary.so
 vendor/lib64/libwfdcommonutils_proprietary.so
@@ -2798,13 +2798,13 @@ vendor/lib64/vendor.meizu.sensor_aux_si@1.0-default-impl.so
 vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 #vendor/lib64/vendor.nxp.nxpese@1.0.so
 #vendor/lib64/vendor.nxp.nxpnfc_aidl-V1-ndk.so
-vendor/lib64/vendor.qti.ImsRtpService-V1-ndk.so
+vendor/lib64/vendor.qti.ImsRtpService-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.ImsRtpService-aidl-Impl.so
 vendor/lib64/vendor.qti.data.factoryservice-V1-ndk.so
 vendor/lib64/vendor.qti.data.mwqem@1.0.so
 vendor/lib64/vendor.qti.data.mwqemaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
-vendor/lib64/vendor.qti.diaghal@1.0.so
+vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.gnss-V5-ndk.so
 vendor/lib64/vendor.qti.gnss-service.so
@@ -2900,7 +2900,7 @@ vendor/lib64/vendor.qti.hardware.limits@1.1.so
 vendor/lib64/vendor.qti.hardware.limits@1.2.so
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk.so
--vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 #vendor/lib64/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/vendor.qti.hardware.perf2-V1-ndk.so
 #vendor/lib64/vendor.qti.hardware.perf@2.0.so
@@ -2999,8 +2999,8 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.ims.rcssipaidlservice-V1-ndk.so
 vendor/lib64/vendor.qti.ims.rcsuceaidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so
-vendor/lib64/vendor.qti.imsrtpservice@3.1.so
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.latency@2.1.so
 vendor/lib64/vendor.qti.latency@2.2.so

@@ -153,6 +153,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.hardware.contexthub
 
+# Dirty hack for slim_daemon and others
+PRODUCT_PACKAGES += \
+    libemutls_get_address \
+    libgpsutilshim
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey

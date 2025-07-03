@@ -53,6 +53,7 @@ lib_fixups: lib_fixups_user_type = {
         'libpalclient',
         'libwpa_client',
         'vendor.qti.hardware.AGMIPC@1.0-impl',
+        'libar-pal',
     ): lib_fixup_remove,
 }
 
@@ -196,6 +197,10 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('ld-android.so'),
     'vendor/lib64/libcommonchiutils.so': blob_fixup()
         .remove_needed('android.hardware.graphics.allocator-V1-ndk.so'),
+    (
+        'vendor/lib64/libSNPE.so'
+    ): blob_fixup()
+        .add_needed('libemutls_get_address.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
