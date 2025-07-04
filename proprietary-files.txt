@@ -2002,7 +2002,7 @@ vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
 vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 #vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.primary.pineapple.so;DISABLE_CHECKELF
+#vendor/lib64/hw/audio.primary.pineapple.so;DISABLE_CHECKELF
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.virtual.default.so
@@ -2094,7 +2094,7 @@ vendor/lib64/libadreno_app_profiles.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
-vendor/lib64/libagm.so;DISABLE_CHECKELF
+#vendor/lib64/libagm.so;DISABLE_CHECKELF
 #vendor/lib64/libagm_compress_plugin.so
 #vendor/lib64/libagm_mixer_plugin.so
 #vendor/lib64/libagm_pcm_plugin.so
@@ -2197,14 +2197,14 @@ vendor/lib64/libcmd_soc.so
 vendor/lib64/libcmd_storage.so
 vendor/lib64/libcmd_test.so
 vendor/lib64/libcmd_tp.so
-vendor/lib64/libcne.so
+vendor/lib64/libcne.so;DISABLE_CHECKELF
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
 vendor/lib64/libcneqmiutils.so
 #vendor/lib64/libcodec2_hidl@1.0.so
 #vendor/lib64/libcodec2_hidl@1.1.so
 #vendor/lib64/libcodec2_hidl@1.2.so
-vendor/lib64/libcodec2_hidl_plugin.so
+#vendor/lib64/libcodec2_hidl_plugin.so
 #vendor/lib64/libcodec2_vndk.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libcomm-protos.so
@@ -2900,7 +2900,7 @@ vendor/lib64/vendor.qti.hardware.limits@1.1.so
 vendor/lib64/vendor.qti.hardware.limits@1.2.so
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+#vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 #vendor/lib64/vendor.qti.hardware.pal@1.0.so
 vendor/lib64/vendor.qti.hardware.perf2-V1-ndk.so
 #vendor/lib64/vendor.qti.hardware.perf@2.0.so

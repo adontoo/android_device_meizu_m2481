@@ -4,23 +4,8 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-soong_namespace {
-  imports: [
-    "vendor/meizu/m2481",
-  ],
-}
-
 cc_library_shared {
     name: "libemutls_get_address",
     srcs: ["emutls.c"],
     vendor: true,
-}
-
-cc_library_shared {
-    name: "libgpsutilshim",
-    srcs: ["gpsutilshim.c"],
-    vendor: true,
-    shared_libs: [
-        "libgps.utils",
-    ],
 }
