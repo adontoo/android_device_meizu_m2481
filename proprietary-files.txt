@@ -198,7 +198,7 @@ vendor/bin/hw/vendor.qti.hardware.alarm-service
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 #vendor/bin/hw/vendor.qti.hardware.display.allocator-service
 vendor/bin/hw/vendor.qti.hardware.display.color-service
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
+vendor/bin/hw/vendor.qti.hardware.display.composer-service;DISABLE_CHECKELF
 #vendor/bin/hw/vendor.qti.hardware.display.demura-service
 vendor/bin/hw/vendor.qti.hardware.factory-service
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
@@ -233,7 +233,7 @@ vendor/bin/irsc_util
 vendor/bin/ks
 vendor/bin/loadalgo
 vendor/bin/loc_launcher
-vendor/bin/lowi-server
+vendor/bin/lowi-server;DISABLE_CHECKELF
 #vendor/bin/mcs_test
 vendor/bin/meizu_charging_helper
 vendor/bin/memtester
@@ -266,7 +266,7 @@ vendor/bin/qdcmss
 vendor/bin/qguard
 vendor/bin/qlm-service
 vendor/bin/qmipriod
-vendor/bin/qms
+vendor/bin/qms;DISABLE_CHECKELF
 vendor/bin/qrtr-cfg
 vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
@@ -1087,7 +1087,7 @@ vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc
 vendor/etc/init/vendor.qti.hardware.soter-service.rc
-vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
+#vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
 vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/init/vendor.qti.memory.pasrmanager-service.rc
@@ -2033,7 +2033,7 @@ vendor/lib64/hw/vendor.qti.hardware.servicetrackeraidl-impl.so
 vendor/lib64/hw/vendor.qti.hardware.soter-impl.so
 vendor/lib64/hw/vendor.qti.hardware.wifidisplaysession@1.0-impl.so
 vendor/lib64/hw/vendor.qti.memory.pasrmanager-impl.so
-vendor/lib64/hw/vibrator.default.so
+#vendor/lib64/hw/vibrator.default.so
 vendor/lib64/hw/vulkan.adreno.so
 vendor/lib64/lib-imscommon.so
 vendor/lib64/lib-imsdcservice.so
@@ -2079,7 +2079,7 @@ vendor/lib64/libSNPE.so
 vendor/lib64/libSensorsInterface.so
 vendor/lib64/libSnpeHtpV75Skel.so
 vendor/lib64/libSnpeHtpV75Stub.so
-vendor/lib64/libTrueSight.so
+vendor/lib64/libTrueSight.so;DISABLE_CHECKELF
 vendor/lib64/libTxPwrJni.so
 vendor/lib64/libVoiceSdk.so
 vendor/lib64/libWlanServiceJni.so
@@ -2211,7 +2211,7 @@ vendor/lib64/libcomm-protos.so
 vendor/lib64/libcommonchiutils.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libcpion.so
-vendor/lib64/libcrussp.so
+vendor/lib64/libcrussp.so;DISABLE_CHECKELF
 #vendor/lib64/libcustomva_intf.so
 vendor/lib64/libcv_common.so
 vendor/lib64/libdataitems.so
@@ -2417,7 +2417,7 @@ vendor/lib64/libops.so
 vendor/lib64/libos.so
 vendor/lib64/libpal_net_if.so
 #vendor/lib64/libpalclient.so
-vendor/lib64/libpasn.so
+#vendor/lib64/libpasn.so
 vendor/lib64/libpasrutils.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
@@ -2444,7 +2444,7 @@ vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
 vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
 vendor/lib64/libqc2audio_platform.so
 vendor/lib64/libqc2audio_swaudiocodec.so
 vendor/lib64/libqc2audio_utils.so
@@ -2534,10 +2534,10 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 #vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libqti_vndfwk_detect_vendor.so
-vendor/lib64/libqtigefar.so
+vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libqtikeymint.so
-vendor/lib64/libqtivibratoreffect.so
+#vendor/lib64/libqtivibratoreffect.so
 vendor/lib64/libqtjsonhelper.so
 vendor/lib64/libqtnodes.so
 vendor/lib64/libqttestclient.so
@@ -2975,7 +2975,7 @@ vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.hardware.soter-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.spu-V2-ndk.so
-vendor/lib64/vendor.qti.hardware.vibrator.impl.so
+#vendor/lib64/vendor.qti.hardware.vibrator.impl.so
 vendor/lib64/vendor.qti.hardware.vpp-V1-ndk.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
