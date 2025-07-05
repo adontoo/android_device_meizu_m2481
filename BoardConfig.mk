@@ -67,8 +67,10 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 TARGET_SCREEN_DENSITY := 560
 
 # DTB
-BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
-BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+PRODUCT_COPY_FILES += \
+    $(KERNEL_PATH)/dtb.img:dtb.img
+BOARD_PREBUILT_DTBOIMAGE := \
+    $(KERNEL_PATH)/dtbo.img
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config/config.fs
@@ -265,9 +267,7 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := \
 
 DEVICE_MANIFEST_SKUS := pineapple
 DEVICE_MANIFEST_PINEAPPLE_FILES := \
-    $(DEVICE_PATH)/configs/vintf/manifest_pineapple.xml \
-    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
-    hardware/qcom-caf/sm8650/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
+    $(DEVICE_PATH)/configs/vintf/manifest_pineapple.xml
 
 DEVICE_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml

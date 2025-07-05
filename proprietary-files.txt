@@ -46,7 +46,7 @@ vendor/etc/vintf/manifest/vendor.meizu.hardware.meizu_kelog@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.meizu.hardware.meizu_thermal_config@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.meizu.hardware.qsh_geofence-service.xml
 vendor/etc/vintf/manifest/vendor.meizu.hardware.smart_scene@1.0-service.xml
-vendor/etc/vintf/manifest/vendor.meizu.ir@1.0-service.xml
+#vendor/etc/vintf/manifest/vendor.meizu.ir@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.meizu.sensor_aux@1.0-default-service.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.alarm.xml
