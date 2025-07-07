@@ -92,15 +92,14 @@ BOARD_KERNEL_CMDLINE := \
     qcom_geni_serial.con_enabled=1 \
     nosoftlockup \
     sysrq_always_enabled \
-    bootconfig
+    androidboot.selinux=permissive
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     androidboot.load_modules_parallel=true \
-    androidboot.console=ttyMSM0 \
-    androidboot.selinux=permissive
+    androidboot.console=ttyMSM0
 
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_INIT_BOOT_HEADER_VERSION := 4
@@ -149,7 +148,7 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/vendor_dl
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_dlkm/,$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules) \
     $(call find-copy-subdir-files,*,$(KERNEL_PATH)/vendor_ramdisk/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules) \
-    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.1.25-android14-11-maybe-dirty)
+    $(call find-copy-subdir-files,*,$(KERNEL_PATH)/system_dlkm/,$(TARGET_COPY_OUT_SYSTEM_DLKM)/lib/modules/6.1.79-android14-11-maybe-dirty)
 
 PRODUCT_COPY_FILES += \
     $(KERNEL_PATH)/vendor_dlkm/q6_pdr_dlkm.ko:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/q6_pdr_dlkm.ko \

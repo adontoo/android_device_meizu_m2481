@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from m2481 flyme12.0.0.0A
+## are from m2481 Flyme 11.2.1.0A
 
 abl.img;AB
 aop.img;AB
