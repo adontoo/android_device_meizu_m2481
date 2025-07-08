@@ -903,7 +903,7 @@ vendor/etc/init/rpmbd.rc
 vendor/etc/init/sc_log_serv.rc
 vendor/etc/init/shsusrd.rc
 vendor/etc/init/ssgtzd.rc
-vendor/etc/init/star_core_serv.rc
+#vendor/etc/init/star_core_serv.rc
 vendor/etc/init/tlpd.rc
 vendor/etc/init/vendor.dpmd.rc
 vendor/etc/init/vendor.meizu.hardware.aw_light@1.0-service.rc
@@ -2665,3 +2665,4 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 vendor/etc/init/hw/init.qcom.rc
 vendor/etc/init/hw/init.qti.kernel.rc
 system/lib64/vendor.qti.diaghal-V1-ndk.so
+vendor/etc/vintf/manifest/vendor.qti.hardware.qseecom@1.0-service.xml

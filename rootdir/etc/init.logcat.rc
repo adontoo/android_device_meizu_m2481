@@ -10,8 +10,7 @@
 on early-init
     mkdir /mnt
     mkdir /mnt/newlogfs
-    mount vfat /dev/block/bootdevice/by-name/logfs /mnt/newlogfs rw
-    mkdir /mnt/newlogfs/ToT
+    mount ext4 /dev/block/sda25 /mnt/newlogfs rw
     rm /mnt/newlogfs/boot_lc_main.logcat
     rm /mnt/newlogfs/boot_dmesg.txt
 
