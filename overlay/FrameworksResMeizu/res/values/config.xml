@@ -78,11 +78,6 @@
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
-    <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
-         supported by the device, but not necessarily appear in config_availableColorModes. The
-         regularly selected color mode will be used if this value is negative. -->
-    <integer name="config_accessibilityColorMode">2</integer>
-
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
@@ -147,7 +142,7 @@
          to maximize power savings but not all devices support it.
          Refer to power.h for details.
     -->
-    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">false</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
@@ -306,14 +301,21 @@
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
-        <item>258</item> <!-- vivid -->
-        <item>256</item> <!-- saturated -->
-        <item>257</item> <!-- standard -->
-        <item>269</item> <!-- original -->
-        <item>268</item> <!-- p3 -->
-        <item>267</item> <!-- srgb -->
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>256</item>
+        <item>257</item>
+        <item>258</item>
+        <item>259</item>
+        <item>260</item>
+        <item>261</item>
+        <item>262</item>
+        <item>263</item>
+        <item>264</item>
+        <item>265</item>
     </integer-array>
 
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
-    <string name="config_dozeUdfpsLongPressSensorType" translatable="false">xiaomi.sensor.fod_detector</string>
+    <string name="config_dozeUdfpsLongPressSensorType" translatable="false"></string>
 </resources>

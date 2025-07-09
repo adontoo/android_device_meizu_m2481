@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Whether to show Smooth Display feature in Settings Options -->
-    <bool name="config_show_smooth_display">true</bool>
+    <bool name="config_show_smooth_display">false</bool>
 
     <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
@@ -17,7 +17,7 @@
          here. If this settings supports only 2 levels, for example, then the default intensity
          should be either LOW (1) or HIGH (3).
     -->
-    <integer name="config_vibration_supported_intensity_levels">3</integer>
+    <integer name="config_vibration_supported_intensity_levels">1</integer>
 
     <!-- Display settings screen, Color mode options. Must be the same length and order as
          config_color_mode_options_values below. Only the values that also appear in
@@ -26,9 +26,6 @@
         <item>Vivid</item>
         <item>Saturated</item>
         <item>Standard</item>
-        <item>Original</item>
-        <item>P3</item>
-        <item>sRGB</item>
     </string-array>
 
     <!-- Display settings screen, Color mode options. Must be the same length and order as
@@ -38,8 +35,5 @@
         <item>258</item>
         <item>256</item>
         <item>257</item>
-        <item>269</item>
-        <item>268</item>
-        <item>267</item>
     </integer-array>
 </resources>

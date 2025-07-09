@@ -5,7 +5,7 @@
     <bool name="config_wifi5ghzSupport">true</bool>
     <bool name="config_wifi6ghzSupport">true</bool>
     <bool name="config_wifiApplicationCentricQosPolicyFeatureEnabled">true</bool>
-    <bool name="config_wifiBridgedSoftApSupported">false</bool>
+    <bool name="config_wifiBridgedSoftApSupported">true</bool>
     <bool name="config_wifiConnectedFrequencyEnhancementEnabled">true</bool>
     <bool name="config_wifiDriverSupportedNl80211RegChangedEvent">true</bool>
     <bool name="config_wifiEnablePartialInitialScan">true</bool>

@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworksResShennong",
+    name: "FrameworksResM2481",
     device_specific: true,
 }

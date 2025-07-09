@@ -88,10 +88,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
         .replace_needed('android.hardware.graphics.composer3-V2-ndk.so', 'android.hardware.graphics.composer3-V3-ndk.so')
         .replace_needed('vendor.qti.hardware.display.config-V8-ndk.so', 'vendor.qti.hardware.display.config-V11-ndk.so'),
-    #(
-    #    'vendor/bin/hw/vendor.qti.hardware.display.composer-service'
-    #): blob_fixup()
-    #    .replace_needed('vendor.qti.hardware.display.config-V11-ndk.so', 'vendor.qti.hardware.display.config-V8-ndk.so'),
     'vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so': blob_fixup()
         .replace_needed('android.hardware.audio.common-V1-ndk.so', 'android.hardware.audio.common-V2-ndk.so'),    
     (
@@ -224,6 +220,11 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lockPlanes')
         .clear_symbol_version('AHardwareBuffer_release')
         .clear_symbol_version('AHardwareBuffer_unlock'),
+    (
+        'vendor/etc/seccomp_policy/wfdhdcphalservice.policy',
+        'vendor/etc/seccomp_policy/atfwd@2.0.policy'
+    ): blob_fixup()
+        .add_line_if_missing('gettid: 1'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

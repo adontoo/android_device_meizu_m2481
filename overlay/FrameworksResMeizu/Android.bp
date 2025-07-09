@@ -5,6 +5,6 @@
 //
 
 runtime_resource_overlay {
-    name: "SystemUIResShennong",
+    name: "FrameworksResMeizu",
     device_specific: true,
 }

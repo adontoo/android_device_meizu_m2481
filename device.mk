@@ -75,7 +75,6 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.pineapple
 
 PRODUCT_PACKAGES += \
-    audioadsprpcd \
     libagmclient \
     libagm_compress_plugin \
     libagm_pcm_plugin \
@@ -282,6 +281,17 @@ PRODUCT_COPY_FILES += \
     WifiResTarget \
     WifiResTarget_spf
 
+# Overlays
+PRODUCT_PACKAGES += \
+    CarrierConfig \
+    FrameworksResM2481 \
+    SecureElementResTarget \
+    SettingsResMeizu \
+    SystemUIResM2481 \
+    WifiResCommon \
+    WifiResTarget \
+    WifiResTarget_spf
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -422,6 +432,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     hostapd_cli \
     libwifi-hal-qcom \
+    libwpa_client \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf \
