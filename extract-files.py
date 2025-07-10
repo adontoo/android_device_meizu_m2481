@@ -56,6 +56,7 @@ lib_fixups: lib_fixups_user_type = {
         'libar-pal',
         'libagm',
         'vendor.qti.hardware.pal@1.0-impl',
+        'android.hardware.graphics.composer3-V2-ndk',
     ): lib_fixup_remove,
 }
 
@@ -86,7 +87,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/vendor.qti.hardware.display.composer3-V1-ndk.so': blob_fixup()
         .replace_needed('android.hardware.graphics.composer3-V2-ndk.so', 'android.hardware.graphics.composer3-V3-ndk.so'),
     'vendor/bin/hw/vendor.qti.hardware.display.composer-service': blob_fixup()
-        .replace_needed('android.hardware.graphics.composer3-V2-ndk.so', 'android.hardware.graphics.composer3-V3-ndk.so')
         .replace_needed('vendor.qti.hardware.display.config-V8-ndk.so', 'vendor.qti.hardware.display.config-V11-ndk.so'),
     'vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so': blob_fixup()
         .replace_needed('android.hardware.audio.common-V1-ndk.so', 'android.hardware.audio.common-V2-ndk.so'),    
