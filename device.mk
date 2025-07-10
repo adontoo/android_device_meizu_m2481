@@ -324,7 +324,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
-    init.logcat.rc \
     init.recovery.qcom.rc \
     init.m2481.rc \
     init.target.rc
