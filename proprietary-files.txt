@@ -1480,7 +1480,6 @@ vendor/lib64/vendor.qti.hardware.limits@1.2.so
 # Listen
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
-vendor/lib64/libhotword_intf.so
 vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
@@ -1570,7 +1569,6 @@ system/lib64/qnn/libQnnHtpV75.so
 system/lib64/qnn/libQnnHtpV75CalculatorStub.so
 system/lib64/qnn/libQnnHtpV75Skel.so
 system/lib64/qnn/libQnnSaver.so
-system/lib64/qnn/libQnnSystem.so
 
 # NFC
 system_ext/etc/permissions/com.nxp.nfc.nq.xml
