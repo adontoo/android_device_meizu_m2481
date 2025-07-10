@@ -139,7 +139,8 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-V3-ndk.vendor
 
 # Camera
-#$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+#PRODUCT_PACKAGES += \
+    android.hardware.camera.provider-V1-external-service
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.concurrent.prebuilt.xml \

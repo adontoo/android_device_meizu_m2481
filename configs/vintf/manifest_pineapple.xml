@@ -71,6 +71,10 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
         </interface>
     </hal>
     <hal format="aidl">
+        <name>android.hardware.camera.provider</name>
+        <fqname>ICameraProvider/external/0</fqname>
+    </hal>
+    <hal format="aidl">
         <name>android.hardware.gatekeeper</name>
         <version>1</version>
         <interface>

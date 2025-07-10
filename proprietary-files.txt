@@ -595,6 +595,7 @@ vendor/etc/camera/truesight/resources/truesight_config_video_light.json
 vendor/etc/camera/truesight/resources/truesight_param.json
 vendor/etc/camera/truesight/resources/truesight_param_debug.json
 vendor/etc/external_camera_config.xml
+vendor/bin/hw/android.hardware.camera.provider-V1-external-service
 vendor/etc/init/android.hardware.camera.provider-V1-external-service.rc
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/permissions/advancedSample_camera_extensions.xml
@@ -769,6 +770,9 @@ vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.camera.postproc-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/etc/vintf/manifest/vendor.qti.camera.offlinecamera-impl.xml
+vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml
+vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl.xml
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.b00
@@ -842,7 +846,7 @@ vendor/etc/res/images/default/charger/meizu_fhd_num_percent.png
 vendor/etc/res/images/default/charger/meizu_fhd_num_percent_2481.png
 
 # CNE
-vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/bin/cnd
 vendor/etc/cne/mwqem.conf
 vendor/etc/cne/profileMwqem.xml
@@ -2609,10 +2613,7 @@ vendor/etc/hostapd/hostapd.deny
 vendor/etc/hostapd/hostapd_default.conf
 vendor/etc/iAmCdRom.iso
 vendor/etc/init/android.hardware.drm-service.clearkey.rc
-vendor/etc/init/android.hardware.health-service.qti.rc
 vendor/etc/init/android.hardware.power-service.rc
-vendor/etc/init/android.hardware.usb-service.qti.rc
-vendor/etc/init/android.hardware.usb.gadget-service.qti.rc
 vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/cas-default.rc
 vendor/etc/init/dlsc.rc
@@ -2621,17 +2622,12 @@ vendor/etc/init/init.qlm-service.rc
 vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/init.sniffer.wlan.rc
 vendor/etc/init/init.spdaemon.rc
-vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipacm.rc
 vendor/etc/init/memtrack_qti.rc
 vendor/etc/init/nfc-service-st.rc
 vendor/etc/init/qteedebugd.rc
 vendor/etc/init/qttestservice.rc
 vendor/etc/init/qwesd.rc
-vendor/etc/init/rpmbd.rc
 vendor/etc/init/sc_log_serv.rc
-vendor/etc/init/vendor.qti.hardware.display.allocator-service.rc
-vendor/etc/init/vendor.qti.hardware.display.demura-service.rc
 vendor/etc/init/vendor.qti.pasrknob@1.0-service.rc
 vendor/etc/init/vendor.qti.qspa-service.rc
 vendor/etc/init/vendor.qti.smp2p.rc
@@ -2659,7 +2655,6 @@ vendor/etc/smomo_setting.xml
 vendor/etc/star_core/star_core_config.json
 vendor/etc/usecaseKvManager.xml
 vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
-vendor/etc/vintf/manifest/android.hardware.health-service.qti.xml
 vendor/etc/vintf/manifest/manifest_xingji_qsee_store_default.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.data.iwlandata.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.lights.service.xml
@@ -2959,3 +2954,8 @@ vendor/lib64/vendor.xingji.hal.starCore@1.0.so
 vendor/lib64/vendor.xingji.hal.starCore@1.1.so
 vendor/lib64/vendor.xingji.hardware.qsee.store@1.0.so
 vendor/priv-app/pasrservice/pasrservice.apk
+vendor/etc/izat.conf
+vendor/etc/media_profiles_pineapple.xml
+vendor/etc/vintf/manifest/vendor.qti.qccvndhal_aidl-service.xml
+vendor/bin/hw/vendor.qti.hardware.lights.service
+vendor/etc/init/vendor.qti.hardware.lights.service.rc
