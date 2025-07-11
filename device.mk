@@ -129,14 +129,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti.recovery
 
 # Biometrics
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.common-V2-ndk.vendor \
-    android.hardware.biometrics.common-V3-ndk.vendor \
-    android.hardware.biometrics.common.thread \
-    android.hardware.biometrics.common.util \
-    android.hardware.biometrics.face-V2-ndk.vendor \
-    android.hardware.biometrics.face-V3-ndk.vendor \
-    android.hardware.biometrics.fingerprint-V3-ndk.vendor
+
 
 # Camera
 #PRODUCT_PACKAGES += \
@@ -316,8 +309,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspa-service
 
 # RIL modem_firmware symlink
-#PRODUCT_PACKAGES += \
-    rfs_msm_mpss_readonly_modem_firmware_symlink \
+PRODUCT_PACKAGES += \
     rfs_msm_mpss_readonly_mbnconfig_symlink
 
 # Rootdir

@@ -56,7 +56,6 @@ lib_fixups: lib_fixups_user_type = {
         'libar-pal',
         'libagm',
         'vendor.qti.hardware.pal@1.0-impl',
-        'android.hardware.graphics.composer3-V2-ndk',
     ): lib_fixup_remove,
 }
 

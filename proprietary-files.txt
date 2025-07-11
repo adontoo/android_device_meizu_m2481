@@ -773,6 +773,7 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/etc/vintf/manifest/vendor.qti.camera.offlinecamera-impl.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl.xml
+vendor/etc/vintf/manifest/vendor.qti.camera.postproc-aidl-impl.xml
 
 # Camera Firmware
 vendor/firmware/CAMERA_ICP.b00
